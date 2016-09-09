@@ -1,0 +1,8 @@
+/u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/rand_ctrl/t_1_ctrl.asm SUCCESS CPI:6.6 CYCLES:5210 ICOUNT:788 IHITRATE: 14.5 DHITRATE: 12.5
+/u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/rand_ctrl/t_2_ctrl.asm SUCCESS CPI:6.4 CYCLES:6024 ICOUNT:948 IHITRATE: 14.4 DHITRATE: 20.3
+/u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/rand_ctrl/t_3_ctrl.asm SUCCESS CPI:6.3 CYCLES:5984 ICOUNT:946 IHITRATE: 14.8 DHITRATE: 19.9
+/u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/rand_ctrl/t_4_ctrl.asm SUCCESS CPI:7.1 CYCLES:4479 ICOUNT:631 IHITRATE: 13.7 DHITRATE: 22.0
+/u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/rand_ctrl/t_5_ctrl.asm SUCCESS CPI:6.5 CYCLES:5928 ICOUNT:916 IHITRATE: 14.7 DHITRATE: 13.7
+/u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/rand_ctrl/t_6_ctrl.asm SUCCESS CPI:6.3 CYCLES:5667 ICOUNT:896 IHITRATE: 14.7 DHITRATE: 28.5
+/u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/rand_ctrl/t_7_ctrl.asm SUCCESS CPI:6.3 CYCLES:6120 ICOUNT:972 IHITRATE: 14.7 DHITRATE: 17.7
+/u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/rand_ctrl/t_8_ctrl.asm SUCCESS CPI:7.0 CYCLES:4657 ICOUNT:669 IHITRATE: 14.3 DHITRATE: 17.7

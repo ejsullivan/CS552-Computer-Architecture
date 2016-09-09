@@ -1,0 +1,735 @@
+Program 0 /u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/rand_mem/t_1_mem.asm
+-------------------------------------------------
+Step: 1
+Compiling /u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/rand_mem/t_1_mem.asm
+Created the following files
+loadfile_0.img
+loadfile_1.img
+loadfile_2.img
+loadfile_3.img
+loadfile_all.img
+loadfile.lst
+Skipping final_memory.syn.v, seems like a file meant for synthesis
+Skipping memc.syn.v, seems like a file meant for synthesis
+Skipping memory2c_align.syn.v, seems like a file meant for synthesis
+Skipping memory2c.syn.v, seems like a file meant for synthesis
+Skipping memv.syn.v, seems like a file meant for synthesis
+Skipping stallmem.syn.v, seems like a file meant for synthesis
+-------------------------------------------------
+Step: 2
+Compiling the following verilog files: alu.v cache.v claAdder16.v claAdder1bit.v claAdder4bit.v claUnit4bit.v clkrst.v control_unit.v decode_unit.v dff.v execute_unit.v fetch_unit.v final_memory.v forwarding_unit.v four_bank_mem.v hazard_unit.v memc.v memory2c_align.v memory2c.v memory_unit.v mem_system_hier.v mem_system_perfbench.v mem_system_randbench.v mem_system_ref.v mem_system.v memv.v nand2.v nor2.v not1.v proc_hier_pbench.v proc_hier.v proc.v reg_EX_MEM.v reg_ID_EX.v reg_IF_ID.v register.v reg_MEM_WB.v rf_bypass.v rf.v shifter.v stallmem.v statereg.v writeback_unit.v xor2.v 
+Top module: proc_hier_pbench
+Compilation log in wsrun.log
+Executing rm -rf __work dump.wlf dump.vcd diff.trace diff.ptrace archsim.trace archsim.ptrace verilogsim.trace verilogsim.ptrace
+Executing vlib __work
+Executing vlog +define+RANDSEED=3 -work __work alu.v cache.v claAdder16.v claAdder1bit.v claAdder4bit.v claUnit4bit.v clkrst.v control_unit.v decode_unit.v dff.v execute_unit.v fetch_unit.v final_memory.v forwarding_unit.v four_bank_mem.v hazard_unit.v memc.v memory2c_align.v memory2c.v memory_unit.v mem_system_hier.v mem_system_perfbench.v mem_system_randbench.v mem_system_ref.v mem_system.v memv.v nand2.v nor2.v not1.v proc_hier_pbench.v proc_hier.v proc.v reg_EX_MEM.v reg_ID_EX.v reg_IF_ID.v register.v reg_MEM_WB.v rf_bypass.v rf.v shifter.v stallmem.v statereg.v writeback_unit.v xor2.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module alu
+-- Compiling module cache
+-- Compiling module claAdder16
+-- Compiling module claAdder1bit
+-- Compiling module claAdder4bit
+-- Compiling module claUnit4bit
+-- Compiling module clkrst
+-- Compiling module control_unit
+-- Compiling module decode_unit
+-- Compiling module dff
+-- Compiling module execute_unit
+-- Compiling module fetch_unit
+-- Compiling module final_memory
+-- Compiling module forwarding_unit
+-- Compiling module four_bank_mem
+-- Compiling module hazard_unit
+-- Compiling module memc
+-- Compiling module memory2c_align
+-- Compiling module memory2c
+-- Compiling module memory_unit
+-- Compiling module mem_system_hier
+-- Compiling module mem_system_perfbench
+-- Compiling module mem_system_randbench
+-- Compiling module mem_system_ref
+-- Compiling module mem_system
+-- Compiling module memv
+-- Compiling module nand2
+-- Compiling module nor2
+-- Compiling module not1
+-- Compiling module proc_hier_pbench
+-- Compiling module proc_hier
+-- Compiling module proc
+-- Compiling module reg_EX_MEM
+-- Compiling module reg_ID_EX
+-- Compiling module reg_IF_ID
+-- Compiling module register
+-- Compiling module reg_MEM_WB
+-- Compiling module rf_bypass
+-- Compiling module rf
+-- Compiling module shifter
+-- Compiling module stallmem
+-- Compiling module statereg
+-- Compiling module writeback_unit
+-- Compiling module xor2
+
+Top level modules:
+	hazard_unit
+	memory2c_align
+	memory_unit
+	mem_system_perfbench
+	mem_system_randbench
+	proc_hier_pbench
+	stallmem
+-------------------------------------------------
+Step: 3
+Running Verilog simulation...details in wsrun.log
+Reading /afs/cs.wisc.edu/s/mentor-2004/common/modeltech-5.8b/tcl/vsim/pref.tcl 
+
+# 5.8b
+
+# vsim -lib __work -c proc_hier_pbench 
+# //  ModelSim SE 5.8b Jan 01 2004 Linux 2.6.32-573.7.1.el6.x86_64
+# //
+# //  Copyright Model Technology, a Mentor Graphics Corporation company, 2004
+# //                         All Rights Reserved.
+# //                   UNPUBLISHED, LICENSED SOFTWARE.
+# //         CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+# //        PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS.
+# //
+# Loading __work.proc_hier_pbench
+# Loading __work.proc_hier
+# Loading __work.clkrst
+# Loading __work.proc
+# Loading __work.fetch_unit
+# Loading __work.memory2c
+# Loading __work.claAdder16
+# Loading __work.claAdder4bit
+# Loading __work.claUnit4bit
+# Loading __work.claAdder1bit
+# Loading __work.xor2
+# Loading __work.nand2
+# Loading __work.not1
+# Loading __work.nor2
+# Loading __work.register
+# Loading __work.dff
+# Loading __work.reg_IF_ID
+# Loading __work.decode_unit
+# Loading __work.rf_bypass
+# Loading __work.rf
+# Loading __work.control_unit
+# Loading __work.reg_ID_EX
+# Loading __work.execute_unit
+# Loading __work.alu
+# Loading __work.shifter
+# Loading __work.reg_EX_MEM
+# Loading __work.mem_system
+# Loading __work.cache
+# Loading __work.memc
+# Loading __work.memv
+# Loading __work.four_bank_mem
+# Loading __work.final_memory
+# Loading __work.statereg
+# Loading __work.reg_MEM_WB
+# Loading __work.writeback_unit
+# Loading __work.forwarding_unit
+VSIM 1> run -all
+# Hello world...simulation starting
+# See verilogsim.log and verilogsim.ptrace for output
+# ** Note: $finish    : proc_hier_pbench.v(115)
+#    Time: 383805 ns  Iteration: 0  Instance: /proc_hier_pbench
+-------------------------------------------------
+Step: 4
+Verilog simulation successful
+See verilogsim.log and verilogsim.ptrace for output
+Created a dump file dump.wlf.
+To view waveforms, open with
+vsim -view dataset=dump.wlf
+-------------------------------------------------
+Step: 5
+Running arch simulator wiscalculator...
+-------------------------------------------------
+Step: 6
+Comparing arch simulation trace against verilog simulation trace
+SUCCESS. Simulations match for /u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/rand_mem/t_1_mem.asm.
+Program 1 /u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/rand_mem/t_2_mem.asm
+-------------------------------------------------
+Step: 1
+Compiling /u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/rand_mem/t_2_mem.asm
+Created the following files
+loadfile_0.img
+loadfile_1.img
+loadfile_2.img
+loadfile_3.img
+loadfile_all.img
+loadfile.lst
+-------------------------------------------------
+Step: 2
+Running Verilog simulation...details in wsrun.log
+Reading /afs/cs.wisc.edu/s/mentor-2004/common/modeltech-5.8b/tcl/vsim/pref.tcl 
+
+# 5.8b
+
+# vsim -lib __work -c proc_hier_pbench 
+# //  ModelSim SE 5.8b Jan 01 2004 Linux 2.6.32-573.7.1.el6.x86_64
+# //
+# //  Copyright Model Technology, a Mentor Graphics Corporation company, 2004
+# //                         All Rights Reserved.
+# //                   UNPUBLISHED, LICENSED SOFTWARE.
+# //         CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+# //        PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS.
+# //
+# Loading __work.proc_hier_pbench
+# Loading __work.proc_hier
+# Loading __work.clkrst
+# Loading __work.proc
+# Loading __work.fetch_unit
+# Loading __work.memory2c
+# Loading __work.claAdder16
+# Loading __work.claAdder4bit
+# Loading __work.claUnit4bit
+# Loading __work.claAdder1bit
+# Loading __work.xor2
+# Loading __work.nand2
+# Loading __work.not1
+# Loading __work.nor2
+# Loading __work.register
+# Loading __work.dff
+# Loading __work.reg_IF_ID
+# Loading __work.decode_unit
+# Loading __work.rf_bypass
+# Loading __work.rf
+# Loading __work.control_unit
+# Loading __work.reg_ID_EX
+# Loading __work.execute_unit
+# Loading __work.alu
+# Loading __work.shifter
+# Loading __work.reg_EX_MEM
+# Loading __work.mem_system
+# Loading __work.cache
+# Loading __work.memc
+# Loading __work.memv
+# Loading __work.four_bank_mem
+# Loading __work.final_memory
+# Loading __work.statereg
+# Loading __work.reg_MEM_WB
+# Loading __work.writeback_unit
+# Loading __work.forwarding_unit
+VSIM 1> run -all
+# Hello world...simulation starting
+# See verilogsim.log and verilogsim.ptrace for output
+# ** Note: $finish    : proc_hier_pbench.v(115)
+#    Time: 424805 ns  Iteration: 0  Instance: /proc_hier_pbench
+-------------------------------------------------
+Step: 3
+Verilog simulation successful
+See verilogsim.log and verilogsim.ptrace for output
+Created a dump file dump.wlf.
+To view waveforms, open with
+vsim -view dataset=dump.wlf
+-------------------------------------------------
+Step: 4
+Running arch simulator wiscalculator...
+-------------------------------------------------
+Step: 5
+Comparing arch simulation trace against verilog simulation trace
+SUCCESS. Simulations match for /u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/rand_mem/t_2_mem.asm.
+Program 2 /u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/rand_mem/t_3_mem.asm
+-------------------------------------------------
+Step: 1
+Compiling /u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/rand_mem/t_3_mem.asm
+Created the following files
+loadfile_0.img
+loadfile_1.img
+loadfile_2.img
+loadfile_3.img
+loadfile_all.img
+loadfile.lst
+-------------------------------------------------
+Step: 2
+Running Verilog simulation...details in wsrun.log
+Reading /afs/cs.wisc.edu/s/mentor-2004/common/modeltech-5.8b/tcl/vsim/pref.tcl 
+
+# 5.8b
+
+# vsim -lib __work -c proc_hier_pbench 
+# //  ModelSim SE 5.8b Jan 01 2004 Linux 2.6.32-573.7.1.el6.x86_64
+# //
+# //  Copyright Model Technology, a Mentor Graphics Corporation company, 2004
+# //                         All Rights Reserved.
+# //                   UNPUBLISHED, LICENSED SOFTWARE.
+# //         CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+# //        PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS.
+# //
+# Loading __work.proc_hier_pbench
+# Loading __work.proc_hier
+# Loading __work.clkrst
+# Loading __work.proc
+# Loading __work.fetch_unit
+# Loading __work.memory2c
+# Loading __work.claAdder16
+# Loading __work.claAdder4bit
+# Loading __work.claUnit4bit
+# Loading __work.claAdder1bit
+# Loading __work.xor2
+# Loading __work.nand2
+# Loading __work.not1
+# Loading __work.nor2
+# Loading __work.register
+# Loading __work.dff
+# Loading __work.reg_IF_ID
+# Loading __work.decode_unit
+# Loading __work.rf_bypass
+# Loading __work.rf
+# Loading __work.control_unit
+# Loading __work.reg_ID_EX
+# Loading __work.execute_unit
+# Loading __work.alu
+# Loading __work.shifter
+# Loading __work.reg_EX_MEM
+# Loading __work.mem_system
+# Loading __work.cache
+# Loading __work.memc
+# Loading __work.memv
+# Loading __work.four_bank_mem
+# Loading __work.final_memory
+# Loading __work.statereg
+# Loading __work.reg_MEM_WB
+# Loading __work.writeback_unit
+# Loading __work.forwarding_unit
+VSIM 1> run -all
+# Hello world...simulation starting
+# See verilogsim.log and verilogsim.ptrace for output
+# ** Note: $finish    : proc_hier_pbench.v(115)
+#    Time: 374705 ns  Iteration: 0  Instance: /proc_hier_pbench
+-------------------------------------------------
+Step: 3
+Verilog simulation successful
+See verilogsim.log and verilogsim.ptrace for output
+Created a dump file dump.wlf.
+To view waveforms, open with
+vsim -view dataset=dump.wlf
+-------------------------------------------------
+Step: 4
+Running arch simulator wiscalculator...
+-------------------------------------------------
+Step: 5
+Comparing arch simulation trace against verilog simulation trace
+SUCCESS. Simulations match for /u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/rand_mem/t_3_mem.asm.
+Program 3 /u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/rand_mem/t_4_mem.asm
+-------------------------------------------------
+Step: 1
+Compiling /u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/rand_mem/t_4_mem.asm
+Created the following files
+loadfile_0.img
+loadfile_1.img
+loadfile_2.img
+loadfile_3.img
+loadfile_all.img
+loadfile.lst
+-------------------------------------------------
+Step: 2
+Running Verilog simulation...details in wsrun.log
+Reading /afs/cs.wisc.edu/s/mentor-2004/common/modeltech-5.8b/tcl/vsim/pref.tcl 
+
+# 5.8b
+
+# vsim -lib __work -c proc_hier_pbench 
+# //  ModelSim SE 5.8b Jan 01 2004 Linux 2.6.32-573.7.1.el6.x86_64
+# //
+# //  Copyright Model Technology, a Mentor Graphics Corporation company, 2004
+# //                         All Rights Reserved.
+# //                   UNPUBLISHED, LICENSED SOFTWARE.
+# //         CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+# //        PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS.
+# //
+# Loading __work.proc_hier_pbench
+# Loading __work.proc_hier
+# Loading __work.clkrst
+# Loading __work.proc
+# Loading __work.fetch_unit
+# Loading __work.memory2c
+# Loading __work.claAdder16
+# Loading __work.claAdder4bit
+# Loading __work.claUnit4bit
+# Loading __work.claAdder1bit
+# Loading __work.xor2
+# Loading __work.nand2
+# Loading __work.not1
+# Loading __work.nor2
+# Loading __work.register
+# Loading __work.dff
+# Loading __work.reg_IF_ID
+# Loading __work.decode_unit
+# Loading __work.rf_bypass
+# Loading __work.rf
+# Loading __work.control_unit
+# Loading __work.reg_ID_EX
+# Loading __work.execute_unit
+# Loading __work.alu
+# Loading __work.shifter
+# Loading __work.reg_EX_MEM
+# Loading __work.mem_system
+# Loading __work.cache
+# Loading __work.memc
+# Loading __work.memv
+# Loading __work.four_bank_mem
+# Loading __work.final_memory
+# Loading __work.statereg
+# Loading __work.reg_MEM_WB
+# Loading __work.writeback_unit
+# Loading __work.forwarding_unit
+VSIM 1> run -all
+# Hello world...simulation starting
+# See verilogsim.log and verilogsim.ptrace for output
+# ** Note: $finish    : proc_hier_pbench.v(115)
+#    Time: 345005 ns  Iteration: 0  Instance: /proc_hier_pbench
+-------------------------------------------------
+Step: 3
+Verilog simulation successful
+See verilogsim.log and verilogsim.ptrace for output
+Created a dump file dump.wlf.
+To view waveforms, open with
+vsim -view dataset=dump.wlf
+-------------------------------------------------
+Step: 4
+Running arch simulator wiscalculator...
+-------------------------------------------------
+Step: 5
+Comparing arch simulation trace against verilog simulation trace
+SUCCESS. Simulations match for /u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/rand_mem/t_4_mem.asm.
+Program 4 /u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/rand_mem/t_5_mem.asm
+-------------------------------------------------
+Step: 1
+Compiling /u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/rand_mem/t_5_mem.asm
+Created the following files
+loadfile_0.img
+loadfile_1.img
+loadfile_2.img
+loadfile_3.img
+loadfile_all.img
+loadfile.lst
+-------------------------------------------------
+Step: 2
+Running Verilog simulation...details in wsrun.log
+Reading /afs/cs.wisc.edu/s/mentor-2004/common/modeltech-5.8b/tcl/vsim/pref.tcl 
+
+# 5.8b
+
+# vsim -lib __work -c proc_hier_pbench 
+# //  ModelSim SE 5.8b Jan 01 2004 Linux 2.6.32-573.7.1.el6.x86_64
+# //
+# //  Copyright Model Technology, a Mentor Graphics Corporation company, 2004
+# //                         All Rights Reserved.
+# //                   UNPUBLISHED, LICENSED SOFTWARE.
+# //         CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+# //        PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS.
+# //
+# Loading __work.proc_hier_pbench
+# Loading __work.proc_hier
+# Loading __work.clkrst
+# Loading __work.proc
+# Loading __work.fetch_unit
+# Loading __work.memory2c
+# Loading __work.claAdder16
+# Loading __work.claAdder4bit
+# Loading __work.claUnit4bit
+# Loading __work.claAdder1bit
+# Loading __work.xor2
+# Loading __work.nand2
+# Loading __work.not1
+# Loading __work.nor2
+# Loading __work.register
+# Loading __work.dff
+# Loading __work.reg_IF_ID
+# Loading __work.decode_unit
+# Loading __work.rf_bypass
+# Loading __work.rf
+# Loading __work.control_unit
+# Loading __work.reg_ID_EX
+# Loading __work.execute_unit
+# Loading __work.alu
+# Loading __work.shifter
+# Loading __work.reg_EX_MEM
+# Loading __work.mem_system
+# Loading __work.cache
+# Loading __work.memc
+# Loading __work.memv
+# Loading __work.four_bank_mem
+# Loading __work.final_memory
+# Loading __work.statereg
+# Loading __work.reg_MEM_WB
+# Loading __work.writeback_unit
+# Loading __work.forwarding_unit
+VSIM 1> run -all
+# Hello world...simulation starting
+# See verilogsim.log and verilogsim.ptrace for output
+# ** Note: $finish    : proc_hier_pbench.v(115)
+#    Time: 380205 ns  Iteration: 0  Instance: /proc_hier_pbench
+-------------------------------------------------
+Step: 3
+Verilog simulation successful
+See verilogsim.log and verilogsim.ptrace for output
+Created a dump file dump.wlf.
+To view waveforms, open with
+vsim -view dataset=dump.wlf
+-------------------------------------------------
+Step: 4
+Running arch simulator wiscalculator...
+-------------------------------------------------
+Step: 5
+Comparing arch simulation trace against verilog simulation trace
+SUCCESS. Simulations match for /u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/rand_mem/t_5_mem.asm.
+Program 5 /u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/rand_mem/t_6_mem.asm
+-------------------------------------------------
+Step: 1
+Compiling /u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/rand_mem/t_6_mem.asm
+Created the following files
+loadfile_0.img
+loadfile_1.img
+loadfile_2.img
+loadfile_3.img
+loadfile_all.img
+loadfile.lst
+-------------------------------------------------
+Step: 2
+Running Verilog simulation...details in wsrun.log
+Reading /afs/cs.wisc.edu/s/mentor-2004/common/modeltech-5.8b/tcl/vsim/pref.tcl 
+
+# 5.8b
+
+# vsim -lib __work -c proc_hier_pbench 
+# //  ModelSim SE 5.8b Jan 01 2004 Linux 2.6.32-573.7.1.el6.x86_64
+# //
+# //  Copyright Model Technology, a Mentor Graphics Corporation company, 2004
+# //                         All Rights Reserved.
+# //                   UNPUBLISHED, LICENSED SOFTWARE.
+# //         CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+# //        PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS.
+# //
+# Loading __work.proc_hier_pbench
+# Loading __work.proc_hier
+# Loading __work.clkrst
+# Loading __work.proc
+# Loading __work.fetch_unit
+# Loading __work.memory2c
+# Loading __work.claAdder16
+# Loading __work.claAdder4bit
+# Loading __work.claUnit4bit
+# Loading __work.claAdder1bit
+# Loading __work.xor2
+# Loading __work.nand2
+# Loading __work.not1
+# Loading __work.nor2
+# Loading __work.register
+# Loading __work.dff
+# Loading __work.reg_IF_ID
+# Loading __work.decode_unit
+# Loading __work.rf_bypass
+# Loading __work.rf
+# Loading __work.control_unit
+# Loading __work.reg_ID_EX
+# Loading __work.execute_unit
+# Loading __work.alu
+# Loading __work.shifter
+# Loading __work.reg_EX_MEM
+# Loading __work.mem_system
+# Loading __work.cache
+# Loading __work.memc
+# Loading __work.memv
+# Loading __work.four_bank_mem
+# Loading __work.final_memory
+# Loading __work.statereg
+# Loading __work.reg_MEM_WB
+# Loading __work.writeback_unit
+# Loading __work.forwarding_unit
+VSIM 1> run -all
+# Hello world...simulation starting
+# See verilogsim.log and verilogsim.ptrace for output
+# ** Note: $finish    : proc_hier_pbench.v(115)
+#    Time: 347905 ns  Iteration: 0  Instance: /proc_hier_pbench
+-------------------------------------------------
+Step: 3
+Verilog simulation successful
+See verilogsim.log and verilogsim.ptrace for output
+Created a dump file dump.wlf.
+To view waveforms, open with
+vsim -view dataset=dump.wlf
+-------------------------------------------------
+Step: 4
+Running arch simulator wiscalculator...
+-------------------------------------------------
+Step: 5
+Comparing arch simulation trace against verilog simulation trace
+SUCCESS. Simulations match for /u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/rand_mem/t_6_mem.asm.
+Program 6 /u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/rand_mem/t_7_mem.asm
+-------------------------------------------------
+Step: 1
+Compiling /u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/rand_mem/t_7_mem.asm
+Created the following files
+loadfile_0.img
+loadfile_1.img
+loadfile_2.img
+loadfile_3.img
+loadfile_all.img
+loadfile.lst
+-------------------------------------------------
+Step: 2
+Running Verilog simulation...details in wsrun.log
+Reading /afs/cs.wisc.edu/s/mentor-2004/common/modeltech-5.8b/tcl/vsim/pref.tcl 
+
+# 5.8b
+
+# vsim -lib __work -c proc_hier_pbench 
+# //  ModelSim SE 5.8b Jan 01 2004 Linux 2.6.32-573.7.1.el6.x86_64
+# //
+# //  Copyright Model Technology, a Mentor Graphics Corporation company, 2004
+# //                         All Rights Reserved.
+# //                   UNPUBLISHED, LICENSED SOFTWARE.
+# //         CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+# //        PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS.
+# //
+# Loading __work.proc_hier_pbench
+# Loading __work.proc_hier
+# Loading __work.clkrst
+# Loading __work.proc
+# Loading __work.fetch_unit
+# Loading __work.memory2c
+# Loading __work.claAdder16
+# Loading __work.claAdder4bit
+# Loading __work.claUnit4bit
+# Loading __work.claAdder1bit
+# Loading __work.xor2
+# Loading __work.nand2
+# Loading __work.not1
+# Loading __work.nor2
+# Loading __work.register
+# Loading __work.dff
+# Loading __work.reg_IF_ID
+# Loading __work.decode_unit
+# Loading __work.rf_bypass
+# Loading __work.rf
+# Loading __work.control_unit
+# Loading __work.reg_ID_EX
+# Loading __work.execute_unit
+# Loading __work.alu
+# Loading __work.shifter
+# Loading __work.reg_EX_MEM
+# Loading __work.mem_system
+# Loading __work.cache
+# Loading __work.memc
+# Loading __work.memv
+# Loading __work.four_bank_mem
+# Loading __work.final_memory
+# Loading __work.statereg
+# Loading __work.reg_MEM_WB
+# Loading __work.writeback_unit
+# Loading __work.forwarding_unit
+VSIM 1> run -all
+# Hello world...simulation starting
+# See verilogsim.log and verilogsim.ptrace for output
+# ** Note: $finish    : proc_hier_pbench.v(115)
+#    Time: 374205 ns  Iteration: 0  Instance: /proc_hier_pbench
+-------------------------------------------------
+Step: 3
+Verilog simulation successful
+See verilogsim.log and verilogsim.ptrace for output
+Created a dump file dump.wlf.
+To view waveforms, open with
+vsim -view dataset=dump.wlf
+-------------------------------------------------
+Step: 4
+Running arch simulator wiscalculator...
+-------------------------------------------------
+Step: 5
+Comparing arch simulation trace against verilog simulation trace
+SUCCESS. Simulations match for /u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/rand_mem/t_7_mem.asm.
+Program 7 /u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/rand_mem/t_8_mem.asm
+-------------------------------------------------
+Step: 1
+Compiling /u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/rand_mem/t_8_mem.asm
+Created the following files
+loadfile_0.img
+loadfile_1.img
+loadfile_2.img
+loadfile_3.img
+loadfile_all.img
+loadfile.lst
+-------------------------------------------------
+Step: 2
+Running Verilog simulation...details in wsrun.log
+Reading /afs/cs.wisc.edu/s/mentor-2004/common/modeltech-5.8b/tcl/vsim/pref.tcl 
+
+# 5.8b
+
+# vsim -lib __work -c proc_hier_pbench 
+# //  ModelSim SE 5.8b Jan 01 2004 Linux 2.6.32-573.7.1.el6.x86_64
+# //
+# //  Copyright Model Technology, a Mentor Graphics Corporation company, 2004
+# //                         All Rights Reserved.
+# //                   UNPUBLISHED, LICENSED SOFTWARE.
+# //         CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+# //        PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS.
+# //
+# Loading __work.proc_hier_pbench
+# Loading __work.proc_hier
+# Loading __work.clkrst
+# Loading __work.proc
+# Loading __work.fetch_unit
+# Loading __work.memory2c
+# Loading __work.claAdder16
+# Loading __work.claAdder4bit
+# Loading __work.claUnit4bit
+# Loading __work.claAdder1bit
+# Loading __work.xor2
+# Loading __work.nand2
+# Loading __work.not1
+# Loading __work.nor2
+# Loading __work.register
+# Loading __work.dff
+# Loading __work.reg_IF_ID
+# Loading __work.decode_unit
+# Loading __work.rf_bypass
+# Loading __work.rf
+# Loading __work.control_unit
+# Loading __work.reg_ID_EX
+# Loading __work.execute_unit
+# Loading __work.alu
+# Loading __work.shifter
+# Loading __work.reg_EX_MEM
+# Loading __work.mem_system
+# Loading __work.cache
+# Loading __work.memc
+# Loading __work.memv
+# Loading __work.four_bank_mem
+# Loading __work.final_memory
+# Loading __work.statereg
+# Loading __work.reg_MEM_WB
+# Loading __work.writeback_unit
+# Loading __work.forwarding_unit
+VSIM 1> run -all
+# Hello world...simulation starting
+# See verilogsim.log and verilogsim.ptrace for output
+# ** Note: $finish    : proc_hier_pbench.v(115)
+#    Time: 369605 ns  Iteration: 0  Instance: /proc_hier_pbench
+-------------------------------------------------
+Step: 3
+Verilog simulation successful
+See verilogsim.log and verilogsim.ptrace for output
+Created a dump file dump.wlf.
+To view waveforms, open with
+vsim -view dataset=dump.wlf
+-------------------------------------------------
+Step: 4
+Running arch simulator wiscalculator...
+-------------------------------------------------
+Step: 5
+Comparing arch simulation trace against verilog simulation trace
+SUCCESS. Simulations match for /u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/rand_mem/t_8_mem.asm.
+-------------------------------------------------
+Final log, saved in summary.log
+/u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/rand_mem/t_1_mem.asm SUCCESS CPI:2.5 CYCLES:3839 ICOUNT:1541 IHITRATE: 100.0 DHITRATE: 37.0
+/u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/rand_mem/t_2_mem.asm SUCCESS CPI:2.6 CYCLES:4249 ICOUNT:1604 IHITRATE: 100.0 DHITRATE: 32.0
+/u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/rand_mem/t_3_mem.asm SUCCESS CPI:2.6 CYCLES:3748 ICOUNT:1455 IHITRATE: 100.0 DHITRATE: 37.5
+/u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/rand_mem/t_4_mem.asm SUCCESS CPI:2.6 CYCLES:3451 ICOUNT:1338 IHITRATE: 100.0 DHITRATE: 39.6
+/u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/rand_mem/t_5_mem.asm SUCCESS CPI:2.5 CYCLES:3803 ICOUNT:1496 IHITRATE: 100.0 DHITRATE: 37.4
+/u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/rand_mem/t_6_mem.asm SUCCESS CPI:2.4 CYCLES:3480 ICOUNT:1463 IHITRATE: 100.0 DHITRATE: 42.4
+/u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/rand_mem/t_7_mem.asm SUCCESS CPI:2.4 CYCLES:3743 ICOUNT:1567 IHITRATE: 100.0 DHITRATE: 39.5
+/u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/rand_mem/t_8_mem.asm SUCCESS CPI:2.6 CYCLES:3697 ICOUNT:1417 IHITRATE: 100.0 DHITRATE: 37.7
+Reading /afs/cs.wisc.edu/s/mentor-2004/common/modeltech-5.8b/tcl/vsim/pref.tcl 

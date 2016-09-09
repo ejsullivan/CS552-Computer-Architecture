@@ -1,0 +1,213 @@
+ 
+****************************************
+Report : hierarchy
+Design : proc
+Version: B-2008.09-SP3
+Date   : Tue May 10 08:53:11 2016
+****************************************
+
+Information: This design contains unmapped logic. (RPT-7)
+
+proc
+    GTECH_AND2                                       gtech
+    GTECH_BUF                                        gtech
+    GTECH_NOT                                        gtech
+    GTECH_OR2                                        gtech
+    decode_unit
+        GTECH_AND2                                   gtech
+        GTECH_BUF                                    gtech
+        GTECH_NOT                                    gtech
+        GTECH_OR2                                    gtech
+        control_unit
+            GTECH_AND2                               gtech
+            GTECH_BUF                                gtech
+            GTECH_NOT                                gtech
+            GTECH_OR2                                gtech
+            GTECH_OR3                                gtech
+            GTECH_OR5                                gtech
+        dff
+            GTECH_BUF                                gtech
+            GTECH_NOT                                gtech
+        rf_bypass
+            GTECH_AND2                               gtech
+            GTECH_BUF                                gtech
+            GTECH_NOT                                gtech
+            rf
+                GTECH_AND2                           gtech
+                GTECH_BUF                            gtech
+                GTECH_NOT                            gtech
+                GTECH_OR2                            gtech
+                register
+                    GTECH_BUF                        gtech
+                    GTECH_NOT                        gtech
+                    dff
+                        ...
+    dff
+        ...
+    execute_unit
+        GTECH_AND2                                   gtech
+        GTECH_BUF                                    gtech
+        GTECH_NOT                                    gtech
+        GTECH_OR2                                    gtech
+        GTECH_XOR2                                   gtech
+        alu
+            GTECH_AND2                               gtech
+            GTECH_BUF                                gtech
+            GTECH_NOT                                gtech
+            GTECH_OR2                                gtech
+            GTECH_OR4                                gtech
+            GTECH_XOR2                               gtech
+            claAdder16
+                claAdder4bit
+                    claAdder1bit
+                        nand2
+                            GTECH_AND2               gtech
+                            GTECH_NOT                gtech
+                        nor2
+                            GTECH_NOT                gtech
+                            GTECH_OR2                gtech
+                        not1
+                            GTECH_NOT                gtech
+                        xor2
+                            GTECH_XOR2               gtech
+                    claUnit4bit
+                        GTECH_AND2                   gtech
+                        GTECH_OR2                    gtech
+            shifter
+                GTECH_AND2                           gtech
+                GTECH_BUF                            gtech
+                GTECH_NOT                            gtech
+                GTECH_OR2                            gtech
+        claAdder16
+            ...
+        dff
+            ...
+        register
+            ...
+    fetch_unit
+        GTECH_AND2                                   gtech
+        GTECH_BUF                                    gtech
+        GTECH_NOT                                    gtech
+        GTECH_OR2                                    gtech
+        claAdder16
+            ...
+        dff
+            ...
+        mem_system
+            GTECH_AND2                               gtech
+            GTECH_BUF                                gtech
+            GTECH_NOT                                gtech
+            GTECH_OR2                                gtech
+            GTECH_OR3                                gtech
+            GTECH_OR4                                gtech
+            GTECH_OR5                                gtech
+            cache_cache_id0
+                GTECH_AND2                           gtech
+                GTECH_BUF                            gtech
+                GTECH_NOT                            gtech
+                GTECH_OR2                            gtech
+                memc_Size1
+                    GTECH_AND2                       gtech
+                    GTECH_AND3                       gtech
+                    GTECH_BUF                        gtech
+                    GTECH_NOT                        gtech
+                    GTECH_OR2                        gtech
+                memc_Size5
+                    GTECH_AND2                       gtech
+                    GTECH_AND3                       gtech
+                    GTECH_BUF                        gtech
+                    GTECH_NOT                        gtech
+                    GTECH_OR2                        gtech
+                memc_Size16
+                    GTECH_AND2                       gtech
+                    GTECH_AND3                       gtech
+                    GTECH_BUF                        gtech
+                    GTECH_NOT                        gtech
+                    GTECH_OR2                        gtech
+                memv
+                    GTECH_AND2                       gtech
+                    GTECH_BUF                        gtech
+                    GTECH_NOT                        gtech
+                    GTECH_OR2                        gtech
+            cache_cache_id2
+                GTECH_AND2                           gtech
+                GTECH_BUF                            gtech
+                GTECH_NOT                            gtech
+                GTECH_OR2                            gtech
+                memc_Size1
+                    ...
+                memc_Size5
+                    ...
+                memc_Size16
+                    ...
+                memv
+                    ...
+            dff
+                ...
+            four_bank_mem
+                GTECH_AND2                           gtech
+                GTECH_NOT                            gtech
+                GTECH_OR2                            gtech
+                dff
+                    ...
+                final_memory
+                    GTECH_AND2                       gtech
+                    GTECH_AND8                       gtech
+                    GTECH_BUF                        gtech
+                    GTECH_NOT                        gtech
+                    GTECH_OR2                        gtech
+                    dff
+                        ...
+            statereg
+                dff
+                    ...
+        register
+            ...
+    forwarding_unit
+        GTECH_AND2                                   gtech
+        GTECH_BUF                                    gtech
+        GTECH_NOT                                    gtech
+        GTECH_OR2                                    gtech
+    mem_system
+        ...
+    reg_EX_MEM
+        GTECH_AND2                                   gtech
+        GTECH_BUF                                    gtech
+        GTECH_NOT                                    gtech
+        GTECH_OR2                                    gtech
+        dff
+            ...
+        register
+            ...
+    reg_ID_EX
+        GTECH_AND2                                   gtech
+        GTECH_BUF                                    gtech
+        GTECH_NOT                                    gtech
+        GTECH_OR2                                    gtech
+        dff
+            ...
+        register
+            ...
+    reg_IF_ID
+        GTECH_BUF                                    gtech
+        GTECH_NOT                                    gtech
+        GTECH_OR2                                    gtech
+        dff
+            ...
+        register
+            ...
+    reg_MEM_WB
+        GTECH_AND2                                   gtech
+        GTECH_BUF                                    gtech
+        GTECH_NOT                                    gtech
+        GTECH_OR2                                    gtech
+        dff
+            ...
+        register
+            ...
+    writeback_unit
+        GTECH_AND2                                   gtech
+        GTECH_BUF                                    gtech
+        GTECH_NOT                                    gtech
+        GTECH_OR2                                    gtech
+1
