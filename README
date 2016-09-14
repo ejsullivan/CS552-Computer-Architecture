@@ -1,0 +1,13 @@
+This is the source code, testing, and synthisis results of my processor design project done for a 
+computer architecture class I took at UW-Madison in the Spring of 2016 with Kai Zhao. It is a pipelined processor
+with a four way set associtive instruction and data caching and byte addressable memory. The processor 
+always predicts that branches will not be taken. A more advanced branch predictor would 
+be an interesting addition at some point.
+
+For some reason we were constrained in what syntax we could use to infer flops. So all flops are declared using
+the module in dff.v. There are a few other contraints we were forced to follow they can be found here.
+http://pages.cs.wisc.edu/~karu/courses/cs552/spring2016/wiki/index.php/Main/VerilogRules
+
+Here is a link to the descrption of the ISA the processor implements.
+http://pages.cs.wisc.edu/~karu/courses/cs552/spring2016/wiki/index.php/Main/ISASpecification
+
